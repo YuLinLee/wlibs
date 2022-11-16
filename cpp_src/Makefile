@@ -6,7 +6,9 @@ FLAGS=$(CXXVERSION) -shared
 LDFLAGS=
 
 LIBW_SO=$(TOPDIR)/libw.so
-OBJS=utils.o api.o
+OBJS=func.o
+OBJS+=utils.o api.o
+
 
 all: $(LIBW_SO) executable
 
